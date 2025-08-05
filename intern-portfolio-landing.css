@@ -42,40 +42,39 @@ section {
 }
 
 .navbar {
-  position: sticky;
+  background-color: #0d1117;
+  position: sticky; /* sticks to top when scrolling */
   top: 0;
-  background-color: #2c3e50;
-  padding: 15px 40px;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
-.navbar-container {
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar ul {
-  list-style: none;
+.nav-links {
   display: flex;
-  gap: 30px;
+  gap: 24px;
+  list-style: none;
 }
 
-.navbar a {
+.nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
   font-weight: bold;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.navbar a:hover {
-  background-color: #00bcd4;
-  color: #fff;
+.nav-links a:hover {
+  color: #00bcd4;
 }
+
 
 /* ===== HERO SECTION ===== */
 .hero {
