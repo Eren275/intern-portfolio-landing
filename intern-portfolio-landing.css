@@ -228,8 +228,6 @@ footer {
 }
 
 /* ===== PORTFOLIO ===== */
-
-/* ===== PORTFOLIO SECTION ===== */
 .portfolio {
   background-color: #ffffff;
   padding: 60px 20px;
@@ -238,6 +236,12 @@ footer {
 
 .portfolio h2 {
   font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.portfolio-subtitle {
+  font-size: 18px;
+  color: #666;
   margin-bottom: 40px;
 }
 
@@ -285,7 +289,6 @@ footer {
   font-size: 16px;
   color: #555;
 }
-
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
