@@ -5,193 +5,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f0f2f5;
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
-  font-size: 18px; /* Base font size increased */
-}
-
-@media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-text, .hero-image {
-    flex: unset;
-    padding: 10px;
-  }
-
-  .hero-text {
-    text-align: center;
-  }
-
-  .hero-image img {
-    max-width: 90%;
-    height: auto;
-  }
-
-  .about-container {
-  flex-direction: column;
-  text-align: center;
-}
-
-.about-info,
-.about-hobbies {
-  text-align: center;
-}
-
-}
-
-
-/* Hero section */
-.hero {
-  background: linear-gradient(to right, #2c3e50, #4ca1af);
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-  transition: background 0.3s ease;
-}
-
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.hero-text {
-  flex: 1;
-  text-align: left;
-  padding: 20px;
-}
-
-.hero-image {
-  flex: 1;
-  text-align: center;
-  padding: 20px;
-}
-
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-
-
-.hero h1 {
-  font-size: 48px; /* Larger heading */
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 24px; /* Larger subheading */
-}
-
-.hero:hover {
-  background: linear-gradient(to right, #34495e, #3b8d99);
-}
-
-/* About and Skills sections */
-.about, .skills, footer {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.about h2, .skills h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.about p {
-  font-size: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.about-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.about-info {
-  flex: 1;
-  font-size: 20px;
-  text-align: left;
-  padding: 10px;
-}
-
-.about-hobbies {
-  flex: 1;
-  text-align: left;
-  padding: 10px;
-}
-
-.about-hobbies h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.about-hobbies ul {
-  list-style-type: disc;
-  padding-left: 20px;
   font-size: 18px;
 }
 
-
-/* Skills list */
-.skills ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 0;
-}
-
-.skills li {
-  background: #ecf0f1;
-  padding: 18px 30px;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 18px;
-  transition: all 0.4s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.skills li:hover {
-  transform: scale(1.1) rotate(1deg);
-  background: #bdc3c7;
-  cursor: pointer;
-}
-
-/* Footer */
-footer {
-  background: #2c3e50;
-  color: white;
-  padding: 40px 20px;
-  margin-top: 40px;
-  font-size: 18px;
-}
-
-footer p {
-  margin: 10px 0;
-}
-
-/* Navigation Bar */
+/* ===== NAVBAR ===== */
 .navbar {
   position: sticky;
   top: 0;
@@ -226,7 +53,50 @@ footer p {
   color: #fff;
 }
 
-/* Smooth scroll for anchor links */
-html {
-  scroll-behavior: smooth;
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  transition: background 0.3s ease;
 }
+
+.hero:hover {
+  background: linear-gradient(to right, #34495e, #3b8d99);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 24px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height:
