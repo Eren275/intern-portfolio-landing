@@ -28,7 +28,13 @@ body {
   .hero-text {
     text-align: center;
   }
+
+  .hero-image img {
+    max-width: 90%;
+    height: auto;
+  }
 }
+
 
 /* Hero section */
 .hero {
@@ -43,9 +49,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* Good for smaller screens */
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .hero-text {
@@ -63,8 +70,10 @@ body {
 .hero-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 
 .hero h1 {
