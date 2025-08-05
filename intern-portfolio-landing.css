@@ -228,6 +228,8 @@ footer {
 }
 
 /* ===== PORTFOLIO ===== */
+
+/* ===== PORTFOLIO SECTION ===== */
 .portfolio {
   background-color: #ffffff;
   padding: 60px 20px;
@@ -255,6 +257,8 @@ footer {
   text-decoration: none;
   color: #333;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-item:hover {
@@ -268,9 +272,18 @@ footer {
   object-fit: cover;
 }
 
-.portfolio-item h3 {
+.portfolio-text {
   padding: 15px;
+}
+
+.portfolio-text h3 {
   font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.portfolio-text p {
+  font-size: 16px;
+  color: #555;
 }
 
 
