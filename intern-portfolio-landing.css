@@ -18,6 +18,14 @@ body {
   font-size: 18px;
 }
 
+section {
+  max-width: 1200px;         /* typical for laptops */
+  margin: 0 auto;            /* center horizontally */
+  padding: 60px 20px;        /* space inside the section */
+  min-height: 100vh;         /* takes full laptop screen height */
+  box-sizing: border-box;    /* ensures padding doesn't exceed width */
+}
+
 /* ===== NAVBAR ===== */
 .logo {
   display: flex;
