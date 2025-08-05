@@ -19,21 +19,19 @@ body {
 }
 
 /* ===== NAVBAR ===== */
-/* Logo styling */
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
 }
 
 .logo img {
-  width: 100px;
-  height: 100px;
+  width: 22px;
+  height: 22px;
 }
-
 
 .navbar {
   position: sticky;
@@ -46,19 +44,14 @@ body {
 
 .navbar-container {
   display: flex;
-  justify-content: space-between; /* Not flex-end */
+  justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
   gap: 30px;
-  margin: 0;
-  padding: 0;
 }
 
 .navbar a {
@@ -78,58 +71,48 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  background: linear-gradient(to right, #2c3e50, #4ca1af);
-  color: white;
-  padding: 100px 20px;
-  transition: background 0.3s ease;
+  background-image: url('https://cdn.pixabay.com/photo/2015/05/31/10/55/code-791200_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero:hover {
-  background: linear-gradient(to right, #34495e, #3b8d99);
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.hero-text {
-  flex: 1;
-  text-align: left;
-  padding: 20px;
-}
-
-.hero-text h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.hero-text p {
-  font-size: 24px;
-}
-
-.hero-image {
-  flex: 1;
+  color: white;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
 }
 
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
 }
+
+.hero p {
+  font-size: 28px;
+}
+
+/* ===== REMAINING SECTIONS (About, Skills, Portfolio, Footer) ===== */
+/* Your existing CSS remains unchanged here */
 
 /* ===== ABOUT SECTION ===== */
 .about {
   background-color: #ffffff;
-  padding: 60px 20px;
+  padding: 100px 20px;
+  margin-top: 60px;
   text-align: center;
 }
 
@@ -180,7 +163,8 @@ body {
 /* ===== SKILLS SECTION ===== */
 .skills {
   background-color: #f7f9fb;
-  padding: 60px 20px;
+  padding: 100px 20px;
+  margin-top: 60px;
   text-align: center;
 }
 
@@ -217,7 +201,8 @@ body {
 /* ===== PORTFOLIO SECTION ===== */
 .portfolio {
   background-color: #ffffff;
-  padding: 60px 20px;
+  padding: 100px 20px;
+  margin-top: 60px;
   text-align: center;
 }
 
@@ -293,7 +278,7 @@ footer {
   background: #2c3e50;
   color: white;
   padding: 40px 20px;
-  margin-top: 40px;
+  margin-top: 100px;
   font-size: 18px;
 }
 
