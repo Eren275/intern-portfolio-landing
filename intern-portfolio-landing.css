@@ -204,12 +204,13 @@ footer {
 
 .footer-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start;  /* Aligns to left */
   align-items: flex-start;
   max-width: 1000px;
   margin: 0 auto;
   text-align: left;
 }
+
 
 .contact-info p {
   display: flex;
@@ -223,6 +224,7 @@ footer {
   width: 24px;
   height: 24px;
 }
+
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
