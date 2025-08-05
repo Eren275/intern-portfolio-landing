@@ -33,6 +33,17 @@ body {
     max-width: 90%;
     height: auto;
   }
+
+  .about-container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-info,
+.about-hobbies {
+  text-align: center;
+}
+
 }
 
 
@@ -105,6 +116,41 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-info {
+  flex: 1;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+}
+
+.about-hobbies {
+  flex: 1;
+  text-align: left;
+  padding: 10px;
+}
+
+.about-hobbies h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-hobbies ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
 
 /* Skills list */
 .skills ul {
