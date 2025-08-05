@@ -14,6 +14,22 @@ body {
   font-size: 18px; /* Base font size increased */
 }
 
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text, .hero-image {
+    flex: unset;
+    padding: 10px;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+}
+
 /* Hero section */
 .hero {
   background: linear-gradient(to right, #2c3e50, #4ca1af);
@@ -22,6 +38,34 @@ body {
   text-align: center;
   transition: background 0.3s ease;
 }
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Good for smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 
 .hero h1 {
   font-size: 48px; /* Larger heading */
