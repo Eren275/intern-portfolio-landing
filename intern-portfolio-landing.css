@@ -237,13 +237,22 @@ footer {
 .portfolio h2 {
   font-size: 36px;
   margin-bottom: 10px;
+  color: #2c3e50;
 }
 
 .portfolio-subtitle {
   font-size: 18px;
-  color: #666;
-  margin-bottom: 40px;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  border-left: 4px solid #00bcd4;
+  padding-left: 16px;
 }
+
 
 .portfolio-grid {
   display: grid;
